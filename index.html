@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+
+    // 1st question
+
+    let alicePoints=0;
+    let bobPoints =0;
+    
+
+    function points() {
+
+      for (let i = 0; i < 3; i++) {
+        if (a[i] > b[i]) {
+          alicePoints += 1;
+        } else if (a[i] < b[i]) {
+          bobPoints += 1;
+        }
+      }
+
+      return [alicePoints, bobPoints];
+    }
+    points();
+
+    //2nd question
+    function Pattern(rows) {
+      for (let i = 1; i <= rows; i++) {
+        let symbol = "";
+        for (let j = 1; j <= i; j++) {
+          symbol += "*";
+        }
+        console.log(symbol);
+      }
+    }
+    Pattern(3);
+  </script>
+</html>
